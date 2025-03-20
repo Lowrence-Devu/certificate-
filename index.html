@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDG Certificate Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container animate-header">
+      <!-- GDG Logo -->
+      <img src="https://pbs.twimg.com/media/D22N_huX4AEbb1y.jpg" alt="GDG Logo" class="logo">
+      <h1>GDG Certificate Generator</h1>
+    </div>
+  </header>
+  <main>
+    <section class="form-section animate-form">
+      <h2>Generate Your Certificate</h2>
+      <p>Fill in the details below to create your personalized certificate.</p>
+      <form id="certificate-form">
+        <label for="name">Enter Participant's Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+        
+        <label for="event">Event Name:</label>
+        <input type="text" id="event" name="event" placeholder="GDG Event" required>
+        
+        <label for="college">College Name:</label>
+        <input type="text" id="college" name="college" placeholder="Your College Name" required>
+        
+        <button type="button" id="generate-btn">Generate Certificate</button>
+      </form>
+    </section>
+    <section id="certificate-preview" class="animate-preview">
+      <h2>Certificate Preview</h2>
+      <canvas id="certificate-canvas"></canvas>
+      <button id="download-btn" style="display: none;">Download Certificate</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 GDG Community. All rights reserved.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
